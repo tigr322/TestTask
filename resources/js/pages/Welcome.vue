@@ -4,14 +4,14 @@ import { dashboard } from '@/routes';
 </script>
 
 <template>
-    <Head title="ShortLink — Сервис сокращения ссылок">
+    <Head title="Сервис сокращения ссылок">
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     </Head>
     <div class="flex min-h-screen flex-col items-center bg-[#FDFDFC] p-6 text-[#1b1b18] dark:bg-[#0a0a0a] dark:text-[#EDEDEC]">
         <header class="mb-6 w-full max-w-4xl text-sm lg:mb-0">
             <nav class="flex items-center justify-between py-4">
-                <span class="text-lg font-semibold tracking-tight">ShortLink</span>
+                <span class="text-lg font-semibold tracking-tight"></span>
                 <div class="flex items-center gap-3">
                     <template v-if="$page.props.auth.user">
                         <Link
@@ -61,7 +61,7 @@ import { dashboard } from '@/routes';
                     href="/admin/register"
                     class="inline-block rounded-sm bg-[#1b1b18] px-8 py-3 text-sm font-medium text-white hover:bg-black dark:bg-[#eeeeec] dark:text-[#1C1C1A] dark:hover:bg-white"
                 >
-                    Начать бесплатно
+                    Начать
                 </a>
                 <Link
                     v-if="$page.props.auth.user"
